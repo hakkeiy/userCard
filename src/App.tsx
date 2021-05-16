@@ -1,10 +1,6 @@
 import "./styles.css";
-import axios from "axios";
 import { UserCard } from "./components/UserCard";
 import { useAllUsers } from "./hooks/useAllUsers";
-import { User } from "./types/api/user";
-import { UserProfile } from "./types/userProfile";
-import { useState } from "react";
 
 export default function App() {
   const { getUsers, userProfiles, loading, error } = useAllUsers();
